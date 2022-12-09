@@ -1,0 +1,59 @@
+{
+  "name": "pkms",
+  "displayName": "Pokémon Showdown Syntax",
+  "description": "Adds syntax highlighting, formatting, auto-completion, jump-to-definition and linting for Pokémon Showdown importable-syntax files (.pkms).",
+  "version": "0.1.0",
+  "license": "MIT",
+  "icon": "icons/extension.png",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "extension.js",
+  "activationEvents": [
+    "onLanguage:pkms"
+  ],
+  "publisher": "itsjavi.com",
+  "contributes": {
+    "languages": [
+      {
+        "id": "pkms",
+        "aliases": [
+          "Pokémon Showdown",
+          "Pokémon Showdown Team",
+          "PokéPaste",
+          "pkms"
+        ],
+        "icon": {
+          "light": "./icons/file.svg",
+          "dark": "./icons/file.svg"
+        },
+        "extensions": [
+          ".pkms",
+          ".pokepaste",
+          ".pkpaste",
+          ".pkmpaste"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pkms",
+        "scopeName": "source.pkms",
+        "path": "./syntaxes/pkms.tmLanguage.json"
+      }
+    ]
+  },
+  "__metadata": {
+    "publisherDisplayName": "itsjavi.com",
+    "targetPlatform": "undefined",
+    "isApplicationScoped": false,
+    "updated": true,
+    "isPreReleaseVersion": false,
+    "installedTimestamp": 1669981414474,
+    "preRelease": false
+  }
+}
